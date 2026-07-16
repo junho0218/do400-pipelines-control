@@ -10,8 +10,8 @@ pipeline {
                 sh 'node ./backend/test.js'
             }
         }
-        steps {
-            stage('Frontend Tests') {
+        stage('Frontend Tests') {
+            steps {
                 sh 'node ./frontend/test.js'
             }
         }
